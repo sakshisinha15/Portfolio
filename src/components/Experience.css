@@ -1,0 +1,89 @@
+.experience-section {
+  position: relative;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, var(--accent-purple), var(--accent-cyan), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-primary);
+  border: 3px solid var(--accent-purple);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-purple);
+  z-index: 2;
+}
+
+.timeline-content {
+  padding: 35px;
+  border-radius: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.job-title {
+  font-size: 22px;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.job-company {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 20px;
+}
+
+.job-period {
+  display: none; /* Handled in badge style if needed, hiding here to match reference */
+}
+
+.job-tasks li {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.job-tasks li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent-purple);
+}
+
+@media (max-width: 576px) {
+  .timeline-line { left: 18px; }
+  .timeline-item { padding-left: 60px; }
+  .timeline-dot { left: 0; width: 36px; height: 36px; }
+}

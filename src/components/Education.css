@@ -1,0 +1,62 @@
+.education-section {
+  position: relative;
+}
+
+.ref-timeline-container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 20px;
+}
+
+.ref-timeline-item {
+  position: relative;
+  padding-left: 35px;
+  padding-bottom: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15); /* The thin vertical timeline line */
+}
+
+/* Ensure the final line doesn't extend infinitely */
+.ref-timeline-item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -7px; /* perfectly centers a 14px dot on a 1px border */
+  top: 5px; /* aligns dot nicely to the H3 text height */
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-cyan);
+  background: var(--bg-primary); /* renders a hollow dot mirroring the canvas background behind it */
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.timeline-institution {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--accent-cyan); /* Maps cleanly to the image's teal tone */
+  margin: 0 0 10px 0;
+}
+
+.timeline-date {
+  font-size: 13px;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.5); /* Dimmed monospace exactly like screenshot */
+  margin: 0 0 15px 0;
+}
+
+.timeline-details p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0 0 5px 0;
+  line-height: 1.5;
+}

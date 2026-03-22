@@ -1,0 +1,51 @@
+.ref-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: var(--accent-purple);
+  top: -100px;
+  left: -200px;
+}
+
+.orb-2 {
+  width: 700px;
+  height: 700px;
+  background: var(--accent-cyan);
+  bottom: -200px;
+  right: -200px;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, var(--text-secondary) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--text-secondary) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.04;
+  z-index: 1;
+}
+
+.app-container {
+  position: relative;
+  z-index: 1;
+}
