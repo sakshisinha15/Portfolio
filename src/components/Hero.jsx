@@ -48,7 +48,7 @@ const Hero = () => {
           <h2 className="greeting">Hi, I'm</h2>
           <h1 className="name gradient-text">Sakshi Sinha</h1>
           <h3 className="hero-role">
-            <Typewriter texts={['Data Analyst', 'Aspiring Data Scientist']} delay={100} />
+            <Typewriter texts={['Data Analyst', 'Data Scientist']} delay={100} />
           </h3>
           <p className="hero-description">
             Welcome! Explore my journey through data, where I transform information into insights and build solutions that make a real impact.
