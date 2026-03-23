@@ -110,7 +110,7 @@ const Projects = () => {
       tags: ["Power BI"],
       links: { 
         github: "https://github.com/sakshisinha15/PowerBICA2", 
-        demo: "https://app.powerbi.com/groups/me/reports/dbf93557-a66c-4514-867a-41dd71ce78e6/224f0a24da7dc0260265?experience=power-bi",
+        demo: "https://app.powerbi.com/view?r=eyJrIjoiN2E5NDQyYjgtOWE1NC00YjZiLTliMjItMmM2ZDg1ODU2ZDRmIiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D",
         responses: "https://docs.google.com/spreadsheets/d/1N6G0Dr2Ae_FxY7iDsuxMWDz1dgf_9c-wwS9eaxSTdgs/edit?resourcekey=&gid=471480764#gid=471480764",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSeQ1gKTsj7jjASK7bc5vMwS8FmhGR8_0ER6qT_ZwBmvtquqqg/viewform"
       },
@@ -125,7 +125,7 @@ const Projects = () => {
       tags: ["Power BI"],
       links: { 
         github: "https://github.com/sakshisinha15/SPOTIFYPOWERBI", 
-        demo: "https://app.powerbi.com/groups/me/reports/afe95532-7283-4222-81db-f77cb9cce907/af180890c9a55b8db00b?experience=power-bi" 
+        demo: "https://app.powerbi.com/view?r=eyJrIjoiNjYyMDk1NmYtNzE5ZS00NjUzLWE4NTYtYmM5OGI5ZmRkMTM4IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" 
       },
       image: "/spotify.png",
       delay: 0.3
