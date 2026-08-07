@@ -48,7 +48,7 @@ const About = () => {
                 I’m driven to solve real-world challenges using data—through compelling visualizations, predictive modeling, and analytical thinking.
               </p>
               <p className="bento-paragraph">
-                Currently exploring: <strong>AWS and Generative AI</strong> to expand my capabilities in scalable and intelligent systems.
+                Currently exploring: <strong>Node.js, Express, LLMs, and RAG</strong> to expand my capabilities in scalable and intelligent systems.
               </p>
               <p className="bento-paragraph mb-0">
                 My goal is to become a proficient Data Analyst / Data Scientist, delivering meaningful insights and building impactful, data-driven solutions.

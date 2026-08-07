@@ -32,7 +32,7 @@ const ProjectCard = ({ title, category, date, description, tags, links, visual: 
   const bulletPoints = description.split('. ').filter(point => point.trim().length > 0);
 
   return (
-    <motion.div 
+    <motion.div
       className="ref-project-card glass-effect"
       ref={ref}
       initial={{ opacity: 0, scale: 0.95 }}
@@ -52,7 +52,7 @@ const ProjectCard = ({ title, category, date, description, tags, links, visual: 
           {date && <span className="ref-project-date">{date}</span>}
         </div>
         <div className="ref-category">{category}</div>
-        
+
         <ul>
           {bulletPoints.map((point, idx) => (
             <li key={idx}>{point.endsWith('.') ? point : point + '.'}</li>
@@ -93,6 +93,26 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Study Stack: Learning Management System",
+      category: "Full Stack Development",
+      date: "Jul'26 - Aug'26",
+      description: "Study Stack is a full-stack website where users can browse and enroll themselves in various available courses. Developed using the MERN stack (MongoDB, Express.js, React.js, Node.js) with secure JWT-based authentication and role-based access control (RBAC). Designed RESTful APIs for user authentication, course management, and enrollment. Built student-facing features for registration, course browsing, and a personalized dashboard. Built instructor-facing features for course creation and real-time monitoring. Developed a responsive UI using React.js with seamless backend integration via Axios.",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "REST API"],
+      links: { github: "https://github.com/sakshisinha15/Study_Stack", demo: "https://studystack12.netlify.app/" },
+      image: '/studystack.png',
+      delay: 0.2
+    },
+    {
+      title: "Smart Event Management System",
+      category: "Backend Development",
+      date: "May'26 - May'26",
+      description: "Developed a role-based Smart Event Management System using Java 21, Spring Boot, Spring Security, JWT Authentication, and PostgreSQL for event handling and user management. Implemented JWT-based authentication and authorization with separate roles for Admin, Organizer, and User. Developed REST APIs for user authentication, organizer approval, and event management using layered architecture. Built backend modules using Spring Data JPA, DTO pattern, Repository-Service architecture, and Global Exception Handling for scalable and maintainable development. Integrated event categories, seat management, deadlines, and organizer approval workflow.",
+      tags: ["Java", "Spring Boot", "Spring Security", "REST API", "PostgreSQL"],
+      links: { github: "https://github.com/sakshisinha15/Smart-event-management-system" },
+      image: '/event.jpg',
+      delay: 0.1
+    },
+    {
       title: "Obesity Level Prediction Model",
       category: "Machine Learning",
       date: "Dec'25 - Dec'25",
@@ -100,7 +120,7 @@ const Projects = () => {
       tags: ["python", "pandas", "numpy", "scikit-learn"],
       links: { github: "https://github.com/sakshisinha15/MAchineLearning" },
       image: "/obesity-chart.png",
-      delay: 0.1
+      delay: 0.3
     },
     {
       title: "Impact of AI Tools on Student Learning",
@@ -108,14 +128,14 @@ const Projects = () => {
       date: "Nov'25 - Dec'25",
       description: "Collected 124 real survey responses via Google Forms and expanded the dataset with 8000+ synthetic responses generated using ChatGPT. Performed data cleaning and transformation using Power Query. Built an interactive Power BI dashboard to visualize trends and insights. Analyzed AI usage across demographics and academic disciplines. Found that AI tools improve student engagement and learning outcomes.",
       tags: ["Power BI"],
-      links: { 
-        github: "https://github.com/sakshisinha15/PowerBICA2", 
+      links: {
+        github: "https://github.com/sakshisinha15/PowerBICA2",
         demo: "https://app.powerbi.com/view?r=eyJrIjoiN2E5NDQyYjgtOWE1NC00YjZiLTliMjItMmM2ZDg1ODU2ZDRmIiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D",
         responses: "https://docs.google.com/spreadsheets/d/1N6G0Dr2Ae_FxY7iDsuxMWDz1dgf_9c-wwS9eaxSTdgs/edit?resourcekey=&gid=471480764#gid=471480764",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSeQ1gKTsj7jjASK7bc5vMwS8FmhGR8_0ER6qT_ZwBmvtquqqg/viewform"
       },
       image: "/impact-ai.png",
-      delay: 0.2
+      delay: 0.4
     },
     {
       title: "Spotify Data Analysis Dashboard",
@@ -123,19 +143,19 @@ const Projects = () => {
       date: "Jul'25 - Jul'25",
       description: "Built an interactive Power BI dashboard to analyze the impact of AI tools on student learning, engagement, and performance. Utilized Power BI and Power Query Editor for data cleaning, transformation, and visualization. Insights revealed over 489 billion total streams and identified shifts in user preferences, supporting data-driven strategies.",
       tags: ["Power BI"],
-      links: { 
-        github: "https://github.com/sakshisinha15/SPOTIFYPOWERBI", 
-        demo: "https://app.powerbi.com/view?r=eyJrIjoiNjYyMDk1NmYtNzE5ZS00NjUzLWE4NTYtYmM5OGI5ZmRkMTM4IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D" 
+      links: {
+        github: "https://github.com/sakshisinha15/SPOTIFYPOWERBI",
+        demo: "https://app.powerbi.com/view?r=eyJrIjoiNjYyMDk1NmYtNzE5ZS00NjUzLWE4NTYtYmM5OGI5ZmRkMTM4IiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D"
       },
       image: "/spotify.png",
-      delay: 0.3
+      delay: 0.5
     }
   ];
 
   return (
     <section id="projects" className="projects-section section-padding">
       <div className="container" ref={ref}>
-        <motion.div 
+        <motion.div
           className="section-header"
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
